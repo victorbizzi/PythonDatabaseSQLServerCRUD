@@ -13,7 +13,7 @@ def login_data_validate(con, username, password):
             cursor.execute(sql, [username, password])
             result = cursor.fetchone()
             if result:
-                print("Login OK")
+                print("\n Login OK")
             else:
                 print("Login failed")
         else:
